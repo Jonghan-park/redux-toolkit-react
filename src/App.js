@@ -21,13 +21,17 @@ function App() {
     dispatch(actions.minusBy(10));
   };
   return (
-    <div>
+    <div className="container">
       <h1>Counter App</h1>
       <h2>{counter}</h2>
-      <button onClick={increment}>Increment</button>
-      <button onClick={decrement}>Decrement</button>
-      <button onClick={addBy}>Add by 10</button>
-      <button onClick={minusBy}>Minus by 10</button>
+      <div className="inAndDe">
+        <button onClick={increment}>Increment</button>
+        <button onClick={decrement}>Decrement</button>
+      </div>
+      <div className="by10">
+        <button onClick={addBy}>Add by 10</button>
+        <button onClick={minusBy}>Minus by 10</button>
+      </div>
     </div>
   );
 }
